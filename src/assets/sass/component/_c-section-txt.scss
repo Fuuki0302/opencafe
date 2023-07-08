@@ -1,0 +1,17 @@
+@use  "../global" as global;
+
+.c-section__txt {
+    display: block;
+    font-weight: bold;
+    font-family: global.$f-ja;
+    text-align: center;
+
+    @include global.mq('pc') {
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: calc(20 / 14);
+    }
+        font-size: 12px;
+        line-height: calc(17 / 12);
+        margin-top: 4px;
+}

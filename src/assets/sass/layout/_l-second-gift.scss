@@ -1,0 +1,124 @@
+@use  "../global" as global;
+
+.l-gift__inner {
+    @include global.mq('tab-up') {
+        padding: 0px 90px;
+    }
+    @include global.mq('pc-down_second') {
+        padding: 0px 60px;
+    }
+    @include global.mq('sp') {
+        padding: 0px 20px;
+    }
+    
+
+}
+
+
+
+.l-gif__View{
+    background: url(../img/img_firstview_concept.png) rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+    @include global.mq('sp') {
+        height: 32vw;
+    }
+
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+}
+
+
+.l-gift{
+    margin: 0 auto;
+    max-width: 1280px;
+    margin-bottom: 53px;
+
+    @include global.mq('sp') {
+        margin: 0 auto;
+    }
+  
+}
+.gift-btn{
+    height: 36px;
+    font-size: 14px;
+    width: 100%;
+    font-family: global.$f-ja;
+    text-align: center;
+    color: global.$c-txt2;
+    background: global.$c-txt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include global.mq('sp') {
+        font-size: 12px;
+        line-height: calc(17 /12);
+        height: 29px;
+    }
+
+    &:hover {
+        color: global.$c-txt;
+        background: global.$c-txt2;
+        border:1px solid global.$c-txt;
+        transition: all .5s ease;
+
+    }
+
+}
+
+.menu_second-flex{
+    display: flex;
+    flex-wrap: wrap;
+    @include global.mq('pc') {
+        // margin-top: 24px;
+        margin-top: 48px;
+    }
+}
+
+.gift_second-item{
+    @include global.mq('pc') {
+        width: calc(25% - 3.6363% *3 / 4);
+        margin-right: 3.6363%;
+        &:nth-of-type(4n) {
+            margin-right: 0;
+        }
+        
+    }
+
+    @include global.mq('sp') {
+        margin-top: 40px;
+        width: calc(50% - 9px);
+        margin-right: 18px;
+        &:nth-of-type(even){
+            margin-right: 0px ;
+        }   
+
+
+    }   
+  
+}
+
+.menu_second-img{
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+

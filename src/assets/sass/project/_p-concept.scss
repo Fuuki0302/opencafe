@@ -1,0 +1,75 @@
+@use  "../global" as global;
+
+
+.p-concept__content{
+    @include global.mq('pc') {
+        margin-left: 80px;  
+        max-width: 470px;
+        order: 2;
+        margin-top: 20px;
+        padding: 0;
+    }
+    padding: 0px 20px;
+
+}
+
+
+.p-concept__content--ttl{
+    font-size: 20px;
+    line-height:  calc(40 /20);
+    font-weight: 600;
+    font-family: global.$f-ja;
+    margin-top: 36px;
+    
+    @include global.mq('pc') {
+        font-size: 28px;
+        line-height:  calc(60 /28);
+        font-weight: 600;
+        font-family: global.$f-ja;
+        margin-top: 50px;
+    }
+
+
+}
+
+.p-concept__content--txt{
+    font-family: global.$f-ja;
+    font-size: 14px;
+    line-height: calc(28 / 14);
+    font-weight: 500;   
+    margin-top: 30px;
+
+    @include global.mq('pc') {
+        margin-top: 48px;
+    }
+
+}
+
+
+.p-concept__btn{
+    @include global.mq('pc'){
+        margin: 0;
+    }
+
+}
+
+
+.p-concept__img{
+    width: 84%; 
+    margin-top: 87px;
+
+    @include global.mq('pc') {
+        margin-top: 0;
+        width: 50.42016%;
+        order: 1;
+        flex-shrink: .6;
+        max-width: 600px;
+
+    }
+    img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+    }
+  
+}

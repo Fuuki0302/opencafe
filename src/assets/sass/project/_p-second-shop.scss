@@ -1,0 +1,67 @@
+@use  "../global" as global;
+
+
+.p-ass__items{
+    margin-bottom: 115px;
+
+    @include global.mq('sp') {
+        margin-top: 47px;
+    }
+
+}
+
+.p-ass__ttl{
+    font-size: 20px;
+    font-family: global.$f-ja;
+    font-weight: 600;
+    line-height: calc(29 /20);
+    padding-left: 14px;
+    border-left: 8px solid global.$c-main;
+    padding-left: 6px;
+
+    @include global.mq('pc') {
+        font-size: 24px;
+        line-height: calc(35 / 24);
+        padding-left: 16px;
+        margin-bottom: 24px;
+        margin-top: 83px;
+        padding-left: 16px;
+
+    }
+
+}
+
+.p-ass__des{
+    margin-left: 18px;
+
+}
+
+
+.p-ass__items--second{
+    margin-top: 119px;
+
+    @include global.mq('sp') {
+        margin-top: 64px;   
+    }
+
+
+}
+
+.p-ass__ttl--second{
+    font-size: 20px;
+    font-family: global.$f-ja;
+    font-weight: 600;
+    line-height: calc(29 /20);
+    padding-left: 14px;
+    border-left: 8px solid global.$c-main;
+    padding-left: 6px;
+
+    @include global.mq('pc') {
+        font-size: 24px;
+        line-height: calc(35 / 24);
+        padding-left: 16px;
+        margin-bottom: 24px;
+
+    }
+
+}

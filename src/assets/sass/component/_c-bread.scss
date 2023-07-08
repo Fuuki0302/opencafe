@@ -1,0 +1,223 @@
+@use  "../global" as global;
+
+
+
+
+/* パンクズ
+===================================== */
+
+
+.breadcrumb {
+
+    @include global.mq('pc') {
+        margin-top: 20px;
+        font-size: 14px;
+        margin: 20px auto 0;
+        max-width: 1180px;
+        
+    }
+
+    margin-top: 15px;
+    padding: 0;
+    list-style: none;
+    font-family: global.$f-ja;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* WP用のbreadcrumbs
+===================================== */
+
+.news-bread {
+    margin-top: 8px;
+    @include global.mq('pc') {
+        margin-top: 15px;
+    }
+}
+
+
+.w_shop-breadcrumb {
+    @include global.mq('sp') {
+        margin-top: 8px;
+    }
+}
+
+.archive.post-shop-archive.current-item {
+    @include global.mq('sp') {
+        padding-left: 2px;
+    }
+}
+
+
+.contact-bread--item {
+    margin: 0 auto;
+    max-width: 768px;
+
+    @include global.mq('pc') {
+        padding: 0px 40px;
+    }
+    @include global.mq('sp') {
+        padding: 0px 20px;
+        margin-top: 20px;
+    }
+}
+
+
+
+.post-root.post.post-post  {
+        margin-left: 11px;
+        margin-right: 11px;
+}
+
+.archive.taxonomy.genre.current-item {
+    margin-left: 11px;
+    margin-right: 11px;
+
+}
+
+.archive.post-menu-archive.current-item {
+    @include global.mq('sp') {
+        margin-left: 11px;
+    }
+
+}
+
+.archive.post-menu-archive {
+    margin-left: 11px;
+    margin-right: 11px;
+
+}
+
+.archive.post-gift-archive.current-item {
+    @include global.mq('sp') {
+        margin-left: 11px;
+    }
+
+}
+
+.taxonomy.category {
+    margin-left: 11px;
+}
+
+.archive.post-shop-archive.current-item {
+    margin-left: 11px;
+}
+
+
+
+
+
+.post.post-page {
+   
+        margin-left: 11px;
+        margin-right: 11px;
+    
+}
+.post.post-page.current-item {
+  
+        margin-left: 11px;
+    
+}
+.current-item {
+    @include global.mq('pc') {
+        margin-left: 11px;
+    }
+}
+
+
+.home {
+    margin-right: 13px ;
+    @include global.mq('sp') {
+        margin-right: 8px;
+    }
+}
+
+
+
+
+/* HTML用のbread
+===================================== */
+
+// .breadcrumb {
+
+//     @include global.mq('pc') {
+//         margin-top: 16px;
+//         margin-left: -7px;
+//     }
+//     margin-top: 4px;
+// padding: 0;
+// list-style: none;
+// font-family: global.$f-ja;
+// }
+
+// .breadcrumb li {
+// display: inline;/*横に並ぶように*/
+// list-style: none;
+// font-weight: bold;/*太字*/
+// }
+
+// .breadcrumb li:after {/* >を表示*/
+// content: '>';
+// padding: 0 0.2em;
+// color: #555;
+// // margin-left: 6px;
+// margin-left: 10px;
+// }
+
+// .breadcrumb li:last-child:after {
+// content: '';
+// }
+
+// .breadcrumb li a {
+//     cursor: pointer;
+//     text-decoration: none;
+//     &:hover {
+//         opacity: .7;
+//         transition: all .3s ease;
+//     }
+
+// text-decoration: none;
+// margin-left: 6px;
+// @include global.mq('pc') {
+//     font-size: 14px;
+//     line-height: calc(24 / 14);
+//     font-family: global.$f-ja;
+//     color: global.$c-txt;/*色*/
+// }
+// @include global.mq('sp') {
+//     font-size: 12px;
+//     line-height: calc(24 / 12);
+//     font-family: global.$f-ja;
+//     color: global.$c-txt;/*色*/
+// }
+// }
+
+// .breadcrumb li a {
+//     li {
+//         a {
+//             span {
+//                 @include global.mq('pc') {
+//                     font-size: 14px;
+//                     line-height: calc(24 / 14);
+//                     font-family: global.$f-ja;
+//                     color: global.$c-txt;/*色*/
+//                     margin-left: -6px;
+//                 }
+//                 @include global.mq('sp') {
+//                     font-size: 12px;
+//                     line-height: calc(24 / 12);
+//                     font-family: global.$f-ja;
+//                     color: global.$c-txt;/*色*/
+//                 }
+
+
+//             }
+//         }
+//     }
+
+// }
+
+// .breadcrumb li a:hover {
+// text-decoration: none;
+// }   

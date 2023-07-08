@@ -1,0 +1,247 @@
+@use  "../global" as global;
+
+
+.p-concept__header--box{
+    position: relative;
+    z-index: 2;
+
+}
+
+.p-concept__header--ttl{
+    z-index: 1;
+    font-weight: 600;
+    text-align: center;
+    font-family: global.$f-as;
+    font-size: 72px;
+    line-height: calc(91 / 72);
+    letter-spacing: .2em;
+    color: #fff;
+
+    @include global.mq('sp') {
+        font-size: 32px;
+        z-index: 1;
+        font-weight: 600;
+        text-align: center;
+        font-family: global.$f-as;
+        line-height: calc(91 / 72);
+        letter-spacing: .2em;
+        color: #fff;
+    }
+
+}
+
+.p-concept__header--txt{
+    color: #fff;
+    font-size: 16px;
+    line-height: calc(23 / 16);
+    font-weight: 600;
+    letter-spacing: .08em;
+    z-index: 1;
+    font-family: global.$f-ja;
+    text-align: center;
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+
+    @include global.mq('sp') {
+        font-size: 12px;
+        color: #fff;
+        line-height: calc(23 / 16);
+        font-weight: 600;
+        letter-spacing: .08em;
+        z-index: 1;
+        font-family: global.$f-ja;
+        text-align: center;
+        margin-top: 6px;
+    }
+
+}
+
+
+.p-concept__body--wrapper{
+    max-width: 1180px;
+    margin: 0 auto;  
+    padding: 0 20px;
+    @include global.mq('pc') {
+        padding: 0 40px;  
+    }
+
+}
+
+
+
+.p-concept__body--flex{
+    @include global.mq('pc') {
+        display: flex;
+        align-items: center;
+        margin-top: 36px;
+    }
+    display: block;
+    margin-top: 53px;
+
+
+}
+
+.p-cocept__body--left{
+    @include global.mq('pc') {
+        margin-right: 6.36364%;
+        // flex-basis: 389px;
+        max-width: 389px;
+        // margin-top: -21px;
+        margin-top: 36px;
+    }
+
+}
+
+.p-concept__body--ttl{
+    font-size: 28px;
+    line-height: calc(60 /28);
+    text-align: left;
+    font-weight: 600;
+    font-family: global.$f-ja;
+
+    @include global.mq('sp') {
+        font-size: 20px;
+        line-height: calc(40 / 20);
+        font-weight: 600;
+        font-family: global.$f-ja;
+    }
+
+}
+
+.p-concept__body__txt{
+    font-size: 14px;
+    line-height: calc(28 / 14);
+    margin-top: 28px;
+    font-weight: 500;
+
+}
+
+.p-cocept__body__right{
+    @include global.mq('pc') {
+        flex-basis: 640px;
+        max-width: 100%;
+    }
+    margin-top: 40px;
+
+}
+
+.p-concept__body--img{
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+
+}
+
+
+.p-concept__body--desFlex{
+    @include global.mq('pc') {
+        display: flex;
+        &:nth-of-type(1) {
+            flex-direction: row-reverse;
+        }
+        align-items: center;
+        margin-top: 200px;
+    }
+    display: block;
+    margin-top: 80px;
+
+
+}
+
+.p-cocept__body--desLeft{
+    @include global.mq('pc') {
+        max-width: 389px;
+    }
+
+
+}
+
+.p-concept__body-desTtl{
+    @include global.mq('sp') {
+        font-size: 20px;
+        line-height: calc(40/ 20);
+        font-family: global.$f-ja;
+        text-align: left;
+        font-weight: 600;
+    }
+
+
+
+    @include global.mq('pc') {
+        font-size: 28px;
+        line-height: calc(60 /28);
+        font-weight: 600;
+        font-family: global.$f-ja;
+        text-align: left;
+        margin-top: -3px;
+    }
+
+}
+
+.p-concept__body-desTxt{
+    font-size: 14px;
+    line-height: calc(28 / 14);
+    font-weight: 500;
+    text-align: left;
+    margin-top: 25px;
+
+}
+
+.p-cocept__body-desRight{
+    @include global.mq('pc') {
+        flex-basis: 640px;
+        max-width: 100%;
+        margin-top: 0;
+    }
+    margin-top: 40px;
+
+
+}
+
+
+.p-cocept__body-desImg{
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+
+
+.p-concept__body-desTtl_second{
+    @include global.mq('sp') {
+        font-size: 20px;
+        line-height: calc(40/ 20);
+        font-family: global.$f-ja;
+        text-align: left;
+        font-weight: 600;
+    }
+
+
+
+    @include global.mq('pc') {
+        font-size: 28px;
+        line-height: calc(60 /28);
+        font-weight: 600;
+        font-family: global.$f-ja;
+        text-align: left;
+        margin-top: -1px;
+    }
+
+}
+
+.p-concept__body-desTxt_second{
+    font-size: 14px;
+    line-height: calc(28 / 14);
+    font-weight: 500;
+    text-align: left;
+    margin-top: 54px;
+
+}
+

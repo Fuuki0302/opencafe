@@ -1,0 +1,25 @@
+@use  "../global" as global;
+
+
+.l-header-inner{
+    height: 100%;
+
+}
+
+.h-s{
+    display: inline-block;
+    width: 10px;
+    height: 15px;
+    font-size: 10px;
+
+}
+
+.h-s_s{
+    font-size: 10px;
+    line-height: 1.5;
+    font-family: global.$f-ja;
+    font-weight: 500;
+
+}
+
+

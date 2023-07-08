@@ -1,0 +1,58 @@
+@use  "../global" as global;
+
+
+.p-gallery__flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+
+}
+
+.p-gallery__img{
+    @include global.mq('tab-up') {
+        width: 257px;
+        margin-right: 24px;
+        &:last-child {
+            margin-right: 0px ;
+        }
+    }
+
+    @include global.mq('pc-down_second') {
+        width: calc(50% - 10px);
+        margin-right: 19px;
+        &:nth-of-type(even) {
+            margin-right: 0;
+        }
+        margin-top: 19px;
+        &:nth-of-type(1) {
+            margin-top: 0;
+        }
+        &:nth-of-type(2) {
+            margin-top: 0;
+        }
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        
+    }
+
+}
+
+.p-galle__btn{
+    margin: 57px auto 0;
+
+    @include global.mq('sp') {
+        margin: 36px auto 0;
+    }
+
+}
+
+.p-btn__wrapper{
+    text-align: center;
+
+}

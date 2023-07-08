@@ -1,0 +1,261 @@
+@use  "../global" as global;
+
+.p-gift__inner{
+    @include global.mq('tab-up') {
+        padding: 0 90px;
+    }
+    @include global.mq('pc-down_second') {
+        padding: 0 60px;
+    }
+    @include global.mq('sp') {
+        padding: 0 20px;
+    }
+}
+
+.p-gift__conteiner{
+    @include global.mq('pc'){
+        margin-top: 80px;
+    }
+    margin-top: 47px;
+}
+
+
+.p-gift__item{
+    display: flex;
+
+    @include global.mq('sp') {
+        display: block;
+    }
+}
+
+.p-gift-left{
+    flex-basis: 528px;
+    margin-right: 40px;
+
+    @include global.mq('sp') {
+        width: 100%;
+    }
+}
+
+
+.p-g-b-l{
+    @include global.mq('sp') {
+        font-size: 20px;
+        margin-top: 12px;
+        line-height: calc(29 /20);
+        font-family: global.$f-ja;
+        font-weight: 600;
+    }
+    font-size: 24px;
+    line-height: calc(35 / 24);
+    font-family: global.$f-ja;
+    font-weight: 600;
+    margin-top: 12px;
+
+
+}
+
+.p-g-b-p{
+    font-size: 32px;
+    line-height: calc(44  / 32);    
+    font-family: global.$f-d;
+    text-align: center;
+    margin-top: -4px;
+
+    @include global.mq('sp') {
+        font-size: 28px;
+        margin-top: 0;
+        line-height: calc(38 / 28);
+    }
+
+}
+
+
+
+.p-gift-right{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    @include global.mq('pc') {
+        flex-basis: 530px;
+        margin-top: 0;
+    }
+
+}
+
+.p-gift-right-box{
+    @include global.mq('pc') {
+        max-width: 245px;
+    }
+    width: calc(50% - 20px);
+
+    margin-right: 40px;
+    &:nth-of-type(even) {
+        margin-right: 0;
+    }
+
+    margin-top: 40px;
+    &:nth-of-type(1) {
+        margin-top: 0;
+    }
+    &:nth-of-type(2) {
+        margin-top: 0;
+
+    }
+
+    @include global.mq('sp') {
+        width: calc(50% - 9px);
+        margin-right: 18px;
+        &:nth-of-type(even){
+            margin-right: 0px ;
+        }   
+
+
+    }   
+
+}
+
+.p-gift-img{
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+
+    }
+
+}
+
+
+.p-gift-body-txt{
+    @include global.mq('pc') {
+        font-size: 14px;
+        line-height: calc(29 / 20);
+        margin-top: 9px;
+    }
+    font-size: 14px;
+    font-family: global.$f-ja;
+    font-weight: 600;
+    margin-top: 8px;
+    line-height: calc(20 / 14);
+
+}
+
+.p-gift-body-des{
+    font-family: global.$f-d;
+    font-size: 24px;
+    line-height: calc(33 / 24);
+    text-align: center;
+
+}
+
+.p-gift-btn-wrapper{
+    max-width: 174px;
+    margin: 12px auto 0; 
+
+    @include global.mq('sp') {
+        max-width: 140px;
+    }
+
+}
+
+
+.p-gift-attention{
+    @include global.mq('pc') {
+        margin-top: 100px;
+        // padding: 80px 60px ;
+        padding: 75px 55px; 
+    }
+    
+    border: solid 4px global.$c-main;
+    background: global.$c-txt2;
+    padding: 36px;
+    margin-top: 60px;
+
+
+}
+
+.p-gift-attentionFlex{
+    display: block;
+    @include global.mq('pc') {
+        display: flex;
+    }
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        border: 1px solid global.$c-main;
+        top: 50%;
+        left: 50%;
+        width: calc(100% - -50px);
+        height: calc(100% - -50px);
+        transform: translate(-50%, -50%);
+
+        @include global.mq('pc') {
+            width: calc(100% - -99px);
+            height: calc(100% - -135px);
+        }
+
+    }
+
+}
+
+.p-gift-attention-left{
+    @include global.mq('pc') {
+        margin-right: 6.25%;
+        max-width: 460px;
+    }
+
+}
+
+.p-gift-attention-TTL{
+    @include global.mq('pc') {
+        font-size: 24px;
+        text-align-last: left;
+        line-height: calc(40 / 24);
+        font-weight: 600;
+    }
+    font-size: 16px;
+    line-height: calc(28 / 16);
+    text-align: center;
+    font-family: global.$f-ja;
+    padding-bottom: 24px;
+    border-bottom: dotted 3px global.$c-main;
+    font-weight: 600;
+    margin-top: -4px;
+
+}
+
+
+.p-gift-attention-txt{
+    @include global.mq('pc') {
+        margin-top: 32px;
+        font-size: 16px;
+        line-height: calc(32 / 16);
+        font-family: global.$f-ja;
+    }
+    @include global.mq('sp') {
+        margin-top: 19px;  
+        font-size: 12px;
+        line-height: calc(24 / 12);
+        text-align: left;
+        font-family: global.$f-ja;
+        font-weight: 500;
+    }
+
+}
+
+.p-gift-attention-right{
+    @include global.mq('sp') {
+        margin-top: 40px;
+}
+
+}
+
+.p-attention-img{
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+}

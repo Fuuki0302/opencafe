@@ -1,0 +1,52 @@
+@use  "../global" as global;
+
+
+.p-access__flex{
+    display: block;
+    @include global.mq('pc') {
+        display: flex;
+        margin-top: 17px;
+    }
+
+}
+
+.p-access__flexLeft{
+    @include global.mq('pc') {
+        margin-right: 40px;
+        width: 324px;
+        
+    }
+
+}
+
+.p-ac__flex{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid global.$c-txt;
+    margin-top: 18px;
+    // width: 324px;
+    padding-bottom: 15px;
+
+    @include global.mq('sp') {
+        margin-top: 16px;
+        padding-bottom: 13px;
+    }
+
+}
+
+.p-ac__ttl,
+.p-ac__txt {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: global.$f-ja; 
+    line-height: calc(24 / 14);
+    text-align: left;
+
+}
+
+.p-ac__ttl{
+    margin-right: 25px;
+    width: 56px;
+
+
+}

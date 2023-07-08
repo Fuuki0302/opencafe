@@ -1,0 +1,70 @@
+@use  "../global" as global;
+
+
+
+.l-footer{
+    position: relative;
+
+    &::before {
+        z-index: 1;
+        position: absolute;
+        content: "";
+        bottom: 0px;
+        left: -64px;
+        width: 322px;
+        height: 289px;
+        background: url(../img/bg_coffee-beans3.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+
+        @include global.mq('pc-down_second') {
+            bottom: 0px;
+            left: -60px;
+            width: 280px;
+            height: 300px;
+        }
+
+        @include global.mq('pc-down') {
+            bottom: 0px;
+            left: -65px;
+            width: 280px;
+            height: 230px;
+
+
+        }
+
+        @include global.mq('sp') {
+            width: 126px;
+            height: 113px;
+            bottom: 85px;
+            left: -34px;
+
+        }
+    }   
+
+}
+
+.l-footer__wrapper{
+    height: 140px;
+    background-color: #382620;
+    position: relative;
+
+
+}
+
+
+.copyright{
+    text-align: center;
+    font-size: 12px;
+    line-height: calc(24/ 12);
+    color: global.$c-txt2;
+    margin-top: 38px;
+    margin-bottom: 20px;
+    font-family: global.$f-ja;
+
+    @include global.mq('sp') {
+        margin-top: 33px
+    }
+
+} 

@@ -1,0 +1,32 @@
+@use  "../global" as global;
+
+
+.c-header__logo{
+    width: 120px;
+
+}
+
+
+.c-header__btn{
+    @include global.mq('pc-down') {
+        background: #382620;
+        border-radius: 50%;
+        display: inline-block;
+        height: 60px;
+        overflow: hidden;
+        transition: opacity .3s;
+        width: 60px;
+    }
+}
+.c-header__btn.btn-open {
+    @include global.mq('pc-down') {
+        background: global.$c-txt2;
+    }
+
+}
+
+
+.btn-open.p-menu__btn-line{
+    background: transparent;
+    transition: all .3s ease;
+}

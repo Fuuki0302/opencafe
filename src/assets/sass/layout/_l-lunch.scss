@@ -1,0 +1,121 @@
+@use  "../global" as global;
+
+.l-lunch__content---wrapper{
+
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+
+    overflow-x: clip;
+
+    &::before {
+        z-index: 1;
+        position: absolute;
+        content: "";
+        top: -212px;
+        right: -36px;
+        width: 201px;
+        height: 228px;
+        background: url(../img/bg_coffee-leaves.png);
+        background-size: contain;
+
+        @include global.mq('sp') {
+            width: 119px;
+            height: 135px;
+            top: -241px;
+            right: -33px;
+
+        }
+    }
+
+    &::after {
+        z-index: 1;
+        position: absolute;
+        content: "";
+        top: 80px;
+        right: 26px;
+        width: 308px;
+        height: 300px;
+        background: url(../img/img_balloon-special-lunch-set.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+
+        @include global.mq('pc-down') {
+            top: 120px;
+            right: 20px;
+            width: 210px;
+            height: 200px;
+        }  
+
+        @include global.mq('sp') {
+            top: -60px;
+            right: -20px;
+            width: 207px;
+            height: 94px;
+        }
+
+
+    }
+    
+
+}
+
+.l-lunch{
+    background: global.$c-b;
+    padding-top: 60px;
+    padding-bottom: 58px;
+    margin-top: 194px;
+    @include global.mq('pc') {
+        margin-top: 364px;
+    }
+
+}
+
+.l-lunch__wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 30px;
+    @include global.mq('pc-down_second') {
+        padding: 0 90px;
+    }
+    @include global.mq('sp') {
+        padding: 0;
+    }
+
+}
+
+
+
+.l-lunch__inner{
+    background: global.$c-txt2;
+    padding: 60px; 
+    margin-top: 60px;
+    @include global.mq('pc-down_second') {
+        padding: 20px;
+    }
+    @include global.mq('sp') {
+        margin-top: 62px;
+    }
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 350px;
+        height: 62px;
+        top: -23px;
+        right: 50%;
+        transform: translateX(50%);
+        background: url(../img/img_ribbon-text.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto; 
+
+        @include global.mq('sp') {
+            width: 284px;
+            background-repeat: no-repeat;
+        }
+
+    }
+
+
+}
+

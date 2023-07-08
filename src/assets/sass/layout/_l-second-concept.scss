@@ -1,0 +1,79 @@
+@use  "../global" as global;
+
+
+.l-firstView{
+
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+
+}
+
+.l-concept__View{
+    background: url(../img/img_firstview_concept.png) rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+
+    @include global.mq('sp') {
+        height: 32vw;
+    }
+
+    position: relative;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+}
+
+.l-firstView__inner{
+    display: block;
+
+}
+
+.l-concept--body{
+    @include global.mq('pc') {
+        padding-bottom: 78px;
+    }
+
+}
+
+
+.row-right{
+    @include global.mq('pc') {
+        margin-right: 6.4545%;
+    }
+
+}
+
+
+.left{
+    @include global.mq('pc') {
+        margin-right: 6.4545%;
+    }
+
+}
+
+
+.concept-imgThree{
+    @include global.mq('sp') {
+        width: 87.7%;
+    }
+
+}

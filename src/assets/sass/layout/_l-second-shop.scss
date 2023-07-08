@@ -1,0 +1,94 @@
+@use  "../global" as global;
+
+.l-firstview__wrapper {
+    position: relative;
+
+    &:before {
+        position: absolute;
+        border: 2px solid #fff;
+        content: "";
+        right: 50%;
+        top: 50%;
+        -webkit-transform: translate(50%, -50%);
+        transform: translate(50%, -50%);
+        height: calc(100% - 30px);
+        width: calc(100% - 30px);
+        z-index: 3;
+    }
+
+    &:after {
+        position: absolute;
+        border: 2px solid #fff;
+        content: "";
+        right: 50%;
+        top: 50%;
+        -webkit-transform: translate(50%, -50%);
+        transform: translate(50%, -50%);
+        height: calc(100% - 20px);
+        width: calc(100% - 20px);
+        z-index: 3;
+    }
+
+}
+
+.l-shop__View{
+    background: url(../img/img_firstview_shop.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    @include global.mq('sp') {
+        height: 32vw;
+    }
+
+}
+
+
+.l-ass__inner{
+    max-width: 768px;
+    margin: 0 auto;
+
+    @include global.mq('pc') {
+        padding: 0 40px;
+    }
+    @include global.mq('sp') {
+        padding: 0 20px;
+    }
+
+}
+
+.bread-inner{
+    padding-top: 4px;
+    @include global.mq('pc') {
+        padding-top: 16px;
+    }
+}
+
+
+.shop-bread{
+    margin-top: 0;
+    margin-left: -211px;
+
+}
+
+
+
+.ass-des{
+    margin-left: 18px;
+}

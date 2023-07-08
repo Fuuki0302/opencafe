@@ -1,0 +1,96 @@
+@use  "../global" as global;
+
+
+.l-concept--body {
+    @include global.mq('sp') {
+        margin-top: 8px;
+    }
+}
+
+.l-concept__content--wrapper{
+    max-width: 100%;
+    width: 100%;
+    overflow-x: clip;
+
+
+    position: relative;
+    &::before { 
+        z-index: 1;
+        position: absolute;
+        content: "";
+        top: -200px;
+        right: -40px;
+        width: 295px;
+        height: 284px;
+
+
+        background: url(../img/bg_coffee-beans@2x.png);
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+
+        @include global.mq('sp') {
+            width: 142px;
+            height: 135px;
+            top: -137px;
+            right: -14px;
+
+        }
+    }
+
+}
+
+.l-concept{
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: -101px;
+        left: -39px;
+        height: 300px;
+        width: 95.95%;
+        background: global.$c-b;
+        z-index: -1;
+
+        @include global.mq('sp') {
+            position: absolute;
+            content: "";
+            bottom: -73px;
+            left: -5px;
+            height: 102px;
+            width: 95.95%;
+            background: #EAE0D5;
+            z-index: -1;
+        }
+    }
+
+}
+
+.l-concept__wrapper{
+    max-width: 1280px;
+    margin: 0 auto ;
+    margin-top: 160px;
+    width: 100%;
+    @include global.mq('sp') {
+        margin-top: 120px;
+    }
+
+}
+
+.l-concept__inner{
+    @include global.mq('pc') {
+        display: flex;
+    }
+
+}
+
+
+
+
+
+.concept_span{
+    margin-top: 27px;
+    display: block;
+}
+

@@ -1,0 +1,97 @@
+@use  "../global" as global;
+
+.l-gallery{
+    overflow-x: clip;
+    position: relative;
+    background: global.$c-b;
+    padding-bottom: 106px;
+    padding-top: 80px;
+    margin-top: 250px;
+    @include global.mq('sp') {
+        margin-top: 168px;
+    }
+
+    
+
+    &::before {
+        z-index: 1;
+        position: absolute;
+        content: "";
+        z-index: 1;
+        position: absolute;
+        content: "";
+        top: -380px;
+        right: -127px;
+        width: 379px;
+        height: 330px;
+        background: url(../img/bg_coffee-beans2@2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include global.mq('sp') {
+            top: -151px;
+            right: -37px;
+            width: 169px;
+            height: 143px;
+            background-repeat: no-repeat;
+        }
+    }
+
+}
+
+.l-galley__wrapper{
+    margin: 0 auto;
+    max-width: 1280px;
+
+    position: relative;
+    &::before {
+        z-index: 1;
+        position: absolute;
+        content: "";
+        top: -35px;
+        left: 428px;
+        transform: translate(-50%, -50%);
+        width: 265px;
+        height: 138px;
+        background: url(../img/img_balloon-gallery.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        
+
+        @include global.mq('pc-down') {
+            top: -35px;
+            left: 200px;
+            width: 265px;
+            height: 138px;
+            background-repeat: no-repeat;
+
+        }
+        @include global.mq('sp') {
+            top: -68px;
+            left: 77px;
+            width: 199px;
+            height: 104px;
+            background-repeat: no-repeat;
+
+        }
+    }
+
+}
+
+
+.l-gallery__inner{
+    @include global.mq('tab-up') {
+        padding: 0 90px; 
+    }
+    @include global.mq('pc-down_second') {
+        padding: 0 60px;
+    }
+    
+
+    @include global.mq('sp') {
+        padding: 0 20px;
+    }
+
+}
+

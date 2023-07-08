@@ -1,0 +1,36 @@
+
+
+
+/* 変数
+===================================== */
+$c-txt : #222;
+$c-txt2: #fff;
+$c-main: #382620;
+$c-ac: #F07317;
+$c-b: #EAE0D5;
+$c-b2: #F3EFEB;
+$c-dis   :#888;
+
+/* font-family
+===================================== */
+$f-ja: "Noto Serif JP", sans-serif;
+$f-as: "Amatic SC", sans-serif;
+$f-po: "Patua One", sans-serif;
+$f-d: "Damion", sans-serif;
+
+/* レイアウト
+===================================== */
+$layout-width-canvas: 1280px;
+$layout-width-inner: 1200px;
+
+/* ブレークポイント
+===================================== */
+$breakpoints: (
+    "sp": "(max-width: 767px)",
+    "pc": "(min-width: 768px)",
+    "pc-down": "(max-width: 1180px)",
+    "tab-down": "(min-width: 1179px)",
+    "tab-up": "(min-width: 1280px)",
+    "pc-down_second": "(max-width: 1279px)",
+    "retina": "only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)",
+);

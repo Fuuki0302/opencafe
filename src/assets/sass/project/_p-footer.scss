@@ -1,0 +1,52 @@
+@use  "../global" as global;
+
+
+
+.p-sns__footer-icon--link{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.p-sns-footer-icon--item{
+    margin-top: 40px;
+    @include global.mq('sp') {
+        margin-top: 45px;
+    }
+    margin-right: 24px;
+    &:last-child {
+        margin-right: 0px;
+    }
+
+}
+
+.p-footer-icon-item--link {
+    cursor: pointer;
+    &:hover {
+        opacity: .7;
+        transition: all .3s ease;
+    }
+    img {
+        @include global.mq('sp') {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+}
+
+
+.p-footer__top-btn{
+    z-index: 98;
+    position: fixed;
+    content: "";
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    bottom: 20px;
+    @include global.mq('sp') {
+        right: 6px;
+        bottom: 8px;
+    }
+
+}

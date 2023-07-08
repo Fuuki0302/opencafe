@@ -1,0 +1,166 @@
+@use  "../global" as global;
+
+.l-news{
+    position: relative;
+
+    &::before {
+        z-index: 1;
+        position: absolute;
+        content: "";
+        top: -265px;
+        left: -88px;
+        width: 354px;
+        height: 320px;
+        background: url(../img/bg_plate.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        @include global.mq('pc-down') {
+            top: -300px;
+            left: 0px;
+            width: 300px;
+            height: 230px;
+
+
+        }
+
+        @include global.mq('sp') {
+            width: 240px;
+            height: 185px;
+            top: -131px;
+            left: -53px;
+            background-repeat: no-repeat;
+
+        }
+    }
+
+}
+
+
+.l-news__wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    @include global.mq('sp') {
+        margin-top: 125px;
+    }    
+
+}
+
+
+.l-news__inner{
+    margin-top: 40px;
+    @include global.mq('tab-up') {
+        padding: 0 90px; 
+    }
+    @include global.mq('pc-down_second') {
+        padding: 0 20px;
+        margin-top: 35px;
+    }
+
+}
+
+
+/* WPでの記述
+===================================== */
+
+.n-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.n-inner {
+    @include global.mq('tab-up') {
+        padding: 0 90px;
+    }
+    padding: 0 20px;
+}
+.n-flex {
+    @include global.mq('pc') {
+        display: flex;
+    }
+    display: block;
+}
+.l-n__flex--wrapper {
+    @include global.mq('pc') {
+        margin-top: 120px;
+    }
+
+}
+.n-main {
+    display: flex;
+    flex-wrap: wrap;
+    @include global.mq('pc') {
+        max-width: 728px;
+        margin-right: 6.5454%;
+        padding-left: 8px;
+    }
+    width: 100%;
+}
+.wp_n-main {
+    margin-top: -50px;
+    @include global.mq('sp') {
+        margin-top: 0;
+    }
+}
+
+.n-TTl {
+    font-size: 24px;
+    line-height: calc(35 /24);
+    text-align: left;
+    font-weight: 600;
+    font-family: global.$f-ja;
+    margin-top: 78px;
+
+    @include global.mq('sp') {
+        font-size: 20px;
+        line-height: calc(40 /20);
+        margin-top: 42px;
+
+    }
+
+}
+.n-flexBox{
+    display: block;
+    @include global.mq('tab-up') {
+        display: flex;
+    }
+
+}
+
+.n-left {
+    position: relative;
+    width: calc(50% - 20px);
+    margin-right: 40px;
+    &:nth-of-type(even) {
+        margin-right: 0;
+    }
+    margin-top: 42px;
+    &:nth-of-type(1){
+        margin-top: 24px;
+
+    }
+    &:nth-of-type(2){
+        margin-top: 24px;
+
+    }
+
+    @include global.mq('sp') {
+        width: calc(50% - 10px);
+        margin-right: 20px;
+        &:nth-of-type(even) {
+            margin-right: 0;
+        }
+        margin-top: 24px;
+    &:nth-of-type(1){
+        margin-top: 35px;
+
+    }
+    &:nth-of-type(2){
+        margin-top: 35px;
+
+    }
+    }
+
+
+}

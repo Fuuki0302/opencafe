@@ -1,0 +1,14 @@
+@use  "../global" as global;
+
+
+.c-galley__ttl{
+    text-align: center;
+
+}
+
+
+.c-galley__txt {
+    font-family: global.$f-ja;
+    text-align: center;
+    
+}
